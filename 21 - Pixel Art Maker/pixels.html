@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Giovanni">
+        <meta name="description" content="create drawings with pixels - this project is part of Google/Udacity FEWD course">
+        <meta name="keywords" content="pixel, art, google, udacity, paint, draw, course">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pixel Art Maker</title>
+        <!--
+        <link rel="icon" href="images/favicon.ico">
+        -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>PixelArtMaker</h1>
+        </header>
+        <div class="container">
+            <div class="config">
+                <input type="text" placeholder="Width" autocomplete="off"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Width'">
+                <span style="color: white;">×</span>
+                <input type="text" placeholder="Height" autocomplete="off"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Height'">
+            </div>
+            <button class="btn submit" type="button">start</button>
+            <div class="workspace">
+                <div class="toolbar" style="display: none;">
+                    <button id="new" class="btn toolbar-btn" type="button">new</button>
+                    <button id="clear" class="btn toolbar-btn" type="button">clear</button>
+                    <span style="color: white;">Color: </span>
+                    <input type="color" class="btn toolbar-btn" autocomplete="off">
+                </div>
+                <table></table>
+            </div>
+        </div>
+    </body>
+</html>

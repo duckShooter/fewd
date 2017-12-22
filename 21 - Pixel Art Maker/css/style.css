@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Abel');
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body {
+    background: linear-gradient(to right, #243b55 0%, #141e30 100%);
+}
+
+h1 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 8vw; /* 8% of the viewport width -font will scale on different screen sizes-*/
+    text-align: center;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.76);
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.animate {
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+.container {
+    font-family: 'Abel', sans-serif;       
+    text-align: center; /* to center inline-block-level elements within container */
+    width: 80%;
+    margin: auto; /* to center block-level element containter */
+}
+
+.config {
+    display: inline-block; /* the <div> will fit its content */
+    transition: all 0.36s ease-in-out ;
+}
+
+.config input {
+    -webkit-appearance: none;
+    color: #ffffff;
+    caret-color: #f5f5f5;
+    background: transparent;
+    font-family: inherit;
+    font-size: 1.25em;
+    text-align: center;
+    border: 0;
+    width: 50px;
+    padding: 5px 10px 5px 10px;
+}
+
+.config input:focus {
+    outline: none;
+}
+
+.config input::-moz-placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.config input::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.btn, .btn:active, .btn:focus {
+    -webkit-appearance: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    outline: none; /* strip off the dotted outline */
+    height: 25px;
+    padding: 0; /* prevent 'button press' effect*/
+    box-shadow: 1px 2px 3px -1px #080808a9;
+    transition: all 0.25s ease-in;
+}
+
+button.submit {
+    background-color: #F04F3D;
+    width: 90px;
+    display: block;
+    margin: 20px auto 20px auto;
+}
+
+.toolbar {
+    background-color: rgba(255, 250, 250, 0.199);
+    border-radius: 5px;
+    margin: auto;
+    width: 30%;
+}
+
+.toolbar-btn {
+    width: 60px;
+    background-color: #28B78D;
+    margin: 5px;
+}
+
+.toolbar-btn[type="color"] {
+    background: none;
+    width: 25px;
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.submit:hover {
+    color: #f8dfac;
+    background-color: #eb2913;
+}
+
+.workspace {
+    overflow: auto;
+}
+
+table {
+    cursor: url('images/pencil16.png') 0 16, auto;
+    border: 1px solid #8a949b94;
+    border-collapse: collapse;
+    margin: 15px auto 15px auto;
+    /* box-shadow: 6px 5px 2px -4px #000000; */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.397), 0 1px 2px rgba(0,0,0,0.397);
+}
+
+td {
+    background-color: #f5f5f5;
+    cursor: inherit;
+    border: 1px solid #8a949b94;
+    height: 15px;
+    width: 15px;
+    min-height: 15px;
+    min-width: 15px;
+    padding: 0;
+}
+
+/*GREEN - #28B78D
+ GRAY - #8A949B
+ YELLOW - #F6B736
+ RED ORANGE - #F04F3D */

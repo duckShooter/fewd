@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Titillium+Web|League+Script');
+/*
+    CSS Properties Shorthands
+    > border: border-width, border-style, border-color;
+    > background: background-color, background-image, background-repeat, background-position;
+    > font: font-style, font-variant, font-weight, font-size, line-height, font-family;
+    > margin: margin-top, margin-right, margin-bottom, margin-left; (i.e. clockwise)
+    > padding: padding-top, padding-right, padding-bottom, padding-left;
+    > list-style: list-style-type, list-style-position, list-style-image;
+    [Refernces:
+        - https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
+        - https://www.sitepoint.com/introduction-css-shorthand/
+    ]
+    ---------------------
+    CSS Gradients
+    > linear-gradient(<angle>, to <side_or_corner>, colors[color-stop <precentage or length])
+
+*/
+.card {
+    -moz-box-shadow: 3px 8px 20px -1px rgba(174,177,191,1);
+    box-shadow: 3px 8px 20px -1px rgba(174,177,191,1);
+    background-color: rgb(241, 238, 238);
+    border: 12px solid;
+    border-image: 12 repeating-linear-gradient(-45deg, #be0e0e 0, #be0e0e 16px, transparent 0, transparent 32px,
+    #2E498C 0, #2E498C 48px, transparent 0, transparent 64px);
+    width: 300px;
+    padding: 15px;
+}
+.c_title {
+    color: #373744;
+    text-align: center;
+    margin: 0 0 5px 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.c_body {
+    color: #373744;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.c_brief {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 0px;
+}
+.container {
+    border: 1px solid #818fafbe;
+    
+    overflow: hidden;
+}
+
+.c_image {
+    float: left; /*Eliminates the white space at the bottom of the container div (don't know why it works)*/
+    max-width: 100%; /*Image will take the width of its container*/
+    height: auto; /*Image's height will be adjusted proportionally to its width*/
+    -moz-transition: 2s ease;
+    transition: 1.05s ease;
+}
+
+.c_image:hover {
+    transform: scale(1.4, 1.4) 
+}
+
+hr {
+    border-color: #2E498C;
+    margin-bottom: 0px;
+}
+
+.c_subtitle {
+    color: white;
+    background-color: #2E498C;
+    font-family: 'Roboto Slab', serif;    
+    display: inline-block; /*To make it only fit it's content and not occupy the entire width of its container*/
+    width: auto;
+    margin: 0;
+    padding: 3px 5px 3px 5px;
+    border-left: 3px solid #aa2204;
+    position: relative;
+    bottom: 2px;
+}
+
+._label {
+    color: #2E498C;
+    font-weight: bold;
+}
+
+.c_description {
+    text-align: justify;
+    text-justify: auto;
+}
+
+.c_sign {
+    font-size: 20px;
+    text-align: right;
+    font-family: 'League Script', cursive;
+}
+
+ul {
+    list-style: none;
+}
+
