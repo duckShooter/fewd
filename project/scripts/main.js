@@ -8,6 +8,7 @@
 
 window.onload = function () {
     var hIn, wIn, submitBtn, colorBtn, table, isLMBDwon, cells;
+    const maxSize = 99;
     [wIn, hIn] = document.querySelectorAll('.config input');
     colorBtn = document.querySelector('input[type="color"]');
     submitBtn = document.getElementsByClassName('btn')[0];
@@ -64,7 +65,7 @@ window.onload = function () {
 
     submitBtn.addEventListener('click', function () {
         let width = parseInt(wIn.value), height = parseInt(hIn.value);
-        if(!isNaN(width) && !isNaN(height)) {
+        if((!isNaN(width) && width <= maxSize) && (!isNaN(height) && height <= maxSize)) {
             table.appendChild(makeGrid(height, width));
             table.classList.add('animate');
             document.getElementsByClassName('toolbar')[0].style.display = 'block';
