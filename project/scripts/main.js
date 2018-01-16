@@ -25,7 +25,7 @@ window.onload = function () {
     }
 
     function warnWrongInput() {
-        let pattern = /^\d{0,3}$/;
+        let pattern = /^\d{0,2}$/;
         if(pattern.test(this.value))
             this.style.color = '#FFFFFF';
         else
